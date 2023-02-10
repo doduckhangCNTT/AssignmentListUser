@@ -52,7 +52,7 @@ function App() {
   }, [users, checkBoxList]);
 
   if (isLoading) return <div>Loading ...</div>;
-  if (error) return "An error has occurred: " + error;
+  if (error) return <div>"An error has occurred: " + error</div>;
 
   return (
     <div className="w-full">
